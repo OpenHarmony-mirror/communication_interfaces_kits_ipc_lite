@@ -16,7 +16,7 @@
 #ifndef _NDK_LIST_H
 #define _NDK_LIST_H
 
-#include "stdint.h"
+#include <stdint.h>
 
 #ifdef __cplusplus
 #if __cplusplus

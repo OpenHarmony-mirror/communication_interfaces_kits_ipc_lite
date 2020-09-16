@@ -16,10 +16,11 @@
 #ifndef _LITEIPC_ADAPTER_H
 #define _LITEIPC_ADAPTER_H
 
-#include "pthread.h"
-#include "stdint.h"
-#include "stdbool.h"
-#include "unistd.h"
+#include <pthread.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <unistd.h>
+
 #include "serializer.h"
 
 #ifdef __cplusplus

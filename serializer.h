@@ -16,9 +16,10 @@
 #ifndef _LITEIPC_SERIALIZER_H_
 #define _LITEIPC_SERIALIZER_H_
 
-#include "stdint.h"
-#include "stdbool.h"
-#include "stddef.h"
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+
 #include "ndk_list.h"
 
 #ifdef __cplusplus
