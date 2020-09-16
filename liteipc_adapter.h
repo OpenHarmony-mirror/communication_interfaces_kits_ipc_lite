@@ -93,14 +93,14 @@ int32_t Transact(const IpcContext* context,
                  uintptr_t* buffer);
 int32_t SendReply(const IpcContext* context, void* ipcMsg, IpcIo* reply);
 int32_t FreeBuffer(const IpcContext* context, void* ptr);
-int32_t RegisteIpcCallback(IpcMsgHandler func,
+int32_t RegisterIpcCallback(IpcMsgHandler func,
                            uint32_t mode,
                            uint32_t timeoutMs,
                            SvcIdentity* sid,
                            void* arg);
-int32_t UnRegisteIpcCallback(SvcIdentity sid);
-int32_t RegisteDeathCallback(const IpcContext* context, SvcIdentity sid, IpcMsgHandler func, void* arg, uint32_t* cbId);
-int32_t UnRegisteDeathCallback(SvcIdentity sid, uint32_t cbId);
+int32_t UnregisterIpcCallback(SvcIdentity sid);
+int32_t RegisterDeathCallback(const IpcContext* context, SvcIdentity sid, IpcMsgHandler func, void* arg, uint32_t* cbId);
+int32_t UnregisterDeathCallback(SvcIdentity sid, uint32_t cbId);
 
 #ifdef __cplusplus
 #if __cplusplus
